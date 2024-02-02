@@ -21,10 +21,3 @@ TEST(ExtendedAssertionsTest, ExtendedAssertions) {
 
 }
 
-// Test case to demonstrate failing assertions
-TEST(FailingAssertionsTest, FailingAssertions) {
-    // These assertions should fail intentionally
-    EXPECT_EQ(1 + 2, 5);  // Should fail because 1 + 2 is not equal to 5
-    EXPECT_GT(5, 10);     // Should fail because 5 is not greater than 10
-    EXPECT_TRUE(2 == 3);  // Should fail because the condition is false
-}
