@@ -1,0 +1,9 @@
+TestSum 4 0
+TestSumEmptyVector 3 0.000866001
+TestSumSingleElementVector 3 0.000825234
+TestSumMultipleElementVector 3 0.000798168
+HelloTest.BasicAssertions 6 0.000542501
+ExtendedAssertionsTest.ExtendedAssertions 5 0.000496521
+FailingAssertionsTest.FailingAssertions 0 0
+---
+FailingAssertionsTest.FailingAssertions

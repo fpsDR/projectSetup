@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/sum_test.dir/sum_test.cpp.o -o sum_test  -lGTest::gtest_main 
