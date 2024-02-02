@@ -20,5 +20,4 @@ jobs:
       run: cmake --build build
       
     - name: Run tests
-      run: ./build/test_sum
-      
+      run: cd build && ctest
