@@ -1,7 +1,0 @@
-add_test( HelloTest.BasicAssertions /home/fpsdr/projects/testing_env/build/hello_test [==[--gtest_filter=HelloTest.BasicAssertions]==] --gtest_also_run_disabled_tests)
-set_tests_properties( HelloTest.BasicAssertions PROPERTIES WORKING_DIRECTORY /home/fpsdr/projects/testing_env/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test( ExtendedAssertionsTest.ExtendedAssertions /home/fpsdr/projects/testing_env/build/hello_test [==[--gtest_filter=ExtendedAssertionsTest.ExtendedAssertions]==] --gtest_also_run_disabled_tests)
-set_tests_properties( ExtendedAssertionsTest.ExtendedAssertions PROPERTIES WORKING_DIRECTORY /home/fpsdr/projects/testing_env/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test( FailingAssertionsTest.FailingAssertions /home/fpsdr/projects/testing_env/build/hello_test [==[--gtest_filter=FailingAssertionsTest.FailingAssertions]==] --gtest_also_run_disabled_tests)
-set_tests_properties( FailingAssertionsTest.FailingAssertions PROPERTIES WORKING_DIRECTORY /home/fpsdr/projects/testing_env/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set( hello_test_TESTS HelloTest.BasicAssertions ExtendedAssertionsTest.ExtendedAssertions FailingAssertionsTest.FailingAssertions)

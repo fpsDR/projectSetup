@@ -1,5 +1,0 @@
-if(EXISTS "/home/fpsdr/projects/testing_env/build/sum_test[1]_tests.cmake")
-  include("/home/fpsdr/projects/testing_env/build/sum_test[1]_tests.cmake")
-else()
-  add_test(sum_test_NOT_BUILT sum_test_NOT_BUILT)
-endif()
