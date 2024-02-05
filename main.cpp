@@ -16,10 +16,6 @@ int main() {
 	else if (result==17){
 		std::cout << "The test passed because result is 17" << std::endl;
 	}
-	
-	else if (result==20){
-		std::cout << "The test passed because result is 20" << std::endl;
-	}
 
 
     return 0;
