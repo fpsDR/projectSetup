@@ -36,3 +36,8 @@ gtest_discover_tests(hello_test)
 
 # Enable testing for the project
 enable_testing()
+
+# Add compiler flags for coverage analysis
+if (CMAKE_BUILD_TYPE STREQUAL "Coverage")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage")
+endif()
