@@ -20,6 +20,9 @@ jobs:
       - name: Run tests
         run: ./build/hello_test
 
+      - name: Install lcov
+        run: sudo apt-get install -y lcov
+
       - name: Generate coverage report
         run: |
           lcov --capture --directory . --output-file coverage.info
@@ -35,4 +38,3 @@ jobs:
         with:
           name: coverage-report
           path: coverage_report
-          
