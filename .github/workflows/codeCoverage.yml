@@ -29,6 +29,7 @@ jobs:
           lcov --remove coverage.info '/usr/*' --output-file coverage.info
           lcov --remove coverage.info 'tests/*' --output-file coverage.info
           lcov --remove coverage.info 'build/*' --output-file coverage.info
+          lcov --remove coverage.info '*/gtest/*' --output-file coverage.info
           genhtml coverage.info --output-directory coverage_report
 
       - name: Upload coverage report
