@@ -5,6 +5,9 @@ project(my_project)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Enable coverage flags
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
+
 include(FetchContent)
 FetchContent_Declare(
   googletest
@@ -18,6 +21,7 @@ FetchContent_MakeAvailable(googletest)
 add_executable(
   main
   main.cpp
+  class1.cpp
 )
 
 # Link GoogleTest to your test executable
@@ -36,8 +40,3 @@ gtest_discover_tests(hello_test)
 
 # Enable testing for the project
 enable_testing()
-
-# Add compiler flags for coverage analysis
-if (CMAKE_BUILD_TYPE STREQUAL "Coverage")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage")
-endif()
