@@ -21,7 +21,6 @@ FetchContent_MakeAvailable(googletest)
 add_executable(
   main
   main.cpp
-  class1.cpp
 )
 
 # Link GoogleTest to your test executable
