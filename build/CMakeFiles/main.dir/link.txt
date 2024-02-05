@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -O0 -fprofile-arcs -ftest-coverage CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/sum.cpp.o -o main 
