@@ -21,5 +21,6 @@ int main() {
 		std::cout << "The test passed because result is 20" << std::endl;
 	}
 
+
     return 0;
 }

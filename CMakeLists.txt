@@ -28,10 +28,11 @@ add_executable(
 add_executable(
   hello_test
   hello_test.cpp
+  sum.cpp
 )
 target_link_libraries(
   hello_test
-  GTest::gtest_main
+  gtest_main
 )
 
 # Include GoogleTest for test discovery
