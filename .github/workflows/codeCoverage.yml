@@ -11,6 +11,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Clean build directory
+        run: rm -rf build/
+
       - name: Set up CMake
         run: cmake -DCMAKE_BUILD_TYPE=Coverage -S . -B build
 
