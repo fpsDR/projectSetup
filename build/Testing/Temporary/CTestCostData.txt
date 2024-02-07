@@ -1,0 +1,5 @@
+SumTest.PositiveNumbers 1 0.005291
+SumTest.NegativeNumbers 1 0.0038802
+SumTest.MixedNumbers 1 0.0028702
+SumTest.EmptyVector 1 0.0039724
+---
